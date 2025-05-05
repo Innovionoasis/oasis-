@@ -1,0 +1,80 @@
+{
+  "name": "grads-application-10",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:4000",
+  "dependencies": {
+    "@dhiwise/react-switch": "^1.0.2",
+    "@tailwindcss/forms": "^0.5.7",
+    "@tanstack/react-table": "^8.5.30",
+    "@testing-library/jest-dom": "^5.15.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "ajv": "8.17.1",
+    "ajv-keywords": "5.1.0",
+    "axios": "^1.8.4",
+    "dayjs": "^1.11.13",
+    "firebase": "^11.6.1",
+    "firebase-admin": "^13.3.0",
+    "framer-motion": "^12.5.0",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^3.0.0",
+    "lucide-react": "^0.477.0",
+    "mammoth": "^1.9.0",
+    "moment": "^2.30.1",
+    "multer": "^1.4.5-lts.2",
+    "openai": "^4.95.0",
+    "path": "^0.12.7",
+    "pdfjs-dist": "^5.1.91",
+    "pdfmake": "^0.2.18",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-circular-progressbar": "^2.0.4",
+    "react-datepicker": "^4.5.0",
+    "react-dom": "^18.2.0",
+    "react-feather": "^2.0.10",
+    "react-helmet": "^6.1.0",
+    "react-icons": "^5.5.0",
+    "react-otp-input": "^3.1.1",
+    "react-pro-sidebar": "^1.0.0",
+    "react-router-dom": "6.0.2",
+    "react-router-hash-link": "^2.4.3",
+    "react-scripts": "5.0.0",
+    "react-select": "^5.2.1",
+    "react-signature-canvas": "^1.1.0-alpha.1",
+    "react-toastify": "^11.0.5",
+    "recharts": "^2.15.3",
+    "styled-components": "^6.1.17",
+    "web-vitals": "^2.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.10",
+    "autoprefixer": "10.4.2",
+    "postcss": "8.4.8",
+    "tailwindcss": "3.4.6"
+  }
+}

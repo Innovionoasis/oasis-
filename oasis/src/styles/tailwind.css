@@ -1,0 +1,268 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /*------Color variables------*/
+    --black_900: #000000;
+    --black_900_0f: #0000000f;
+    --black_900_2c: #0000002c;
+    --black_900_33: #00000033;
+    --black_900_3f: #0000003f;
+    --black_900_72: #00000072;
+    --black_900_7f: #0000007f;
+    --black_900_8c: #0000008c;
+    --black_900_96: #00000096;
+    --black_900_b5: #000000b5;
+    --black_900_cc: #000000cc;
+    --blue_100: #c4ebfe;
+    --blue_100_01: #c9eafe;
+    --blue_700: #1976d2;
+    --blue_700_01: #2f65dd;
+    --blue_a200: #4182f9;
+    --blue_a200_01: #4182f901;
+    --blue_a200_19: #4182f919;
+    --blue_a200_33: #4182f933;
+    --blue_a200_82: #4182f982;
+    --blue_gray_100: #cccccc;
+    --blue_gray_100_01: #d9d8d8;
+    --blue_gray_100_02: #d9d9d9;
+    --blue_gray_100_03: #c8d9e6;
+    --blue_gray_100_04: #d1d5db;
+    --blue_gray_100_1c: #c8d9e61c;
+    --blue_gray_100_1e: #c8d9e61e;
+    --blue_gray_100_30: #c8d9e630;
+    --blue_gray_100_3f: #d9d9d93f;
+    --blue_gray_100_70: #c8d9e670;
+    --blue_gray_100_89: #c8d9e689;
+    --blue_gray_100_8c: #d9d9d98c;
+    --blue_gray_100_8c_01: #d0d0d08c;
+    --blue_gray_100_ad: #c8d9e6ad;
+    --blue_gray_100_bc: #c8d9e6bc;
+    --blue_gray_200: #abb1bb;
+    --blue_gray_200_01: #b5b7c0;
+    --blue_gray_400_2d: #8a8f922d;
+    --blue_gray_400_2d_01: #8a898d2d;
+    --blue_gray_400_89: #7998b089;
+    --blue_gray_500: #677082;
+    --blue_gray_500_01: #667081;
+    --blue_gray_500_02: #567c8d;
+    --blue_gray_500_14: #567c8d14;
+    --blue_gray_500_bc: #567c8dbc;
+    --blue_gray_700: #384d6c;
+    --blue_gray_800: #3e435d;
+    --blue_gray_800_01: #4a4459;
+    --blue_gray_800_02: #404b52;
+    --blue_gray_800_89: #2f415689;
+    --blue_gray_900: #333333;
+    --blue_gray_900_01: #292d32;
+    --blue_gray_900_c1: #333333c1;
+    --deep_orange_100: #ffc4c4;
+    --deep_orange_800_60: #c06b1560;
+    --deep_purple_300_fc: #8f86ddfc;
+    --deep_purple_50: #eaddff;
+    --deep_purple_a400: #5932ea;
+    --gray_100: #f7f7f7;
+    --gray_100_01: #f4f4f4;
+    --gray_100_02: #f5f5f5;
+    --gray_100_8c: #f7f7f78c;
+    --gray_200: #eeeeee;
+    --gray_200_b2: #e9e8e8b2;
+    --gray_200_bf: #f5efebbf;
+    --gray_300: #dfe0eb;
+    --gray_300_01: #dbdbdb;
+    --gray_300_02: #e3e3e3;
+    --gray_300_03: #e3e4e8;
+    --gray_300_04: #dfe1e6;
+    --gray_300_2d: #e3e3e32d;
+    --gray_300_5b: #dedede5b;
+    --gray_300_5b_01: #e1dcdc5b;
+    --gray_300_66: #e3e3e366;
+    --gray_300_8c: #e4e4e48c;
+    --gray_300_99: #e3e3e399;
+    --gray_400: #bdbdbd;
+    --gray_400_01: #bcbcbc;
+    --gray_400_02: #d5c4c4;
+    --gray_400_03: #b9b9b9;
+    --gray_50: #fffbfb;
+    --gray_500: #ada7a7;
+    --gray_500_01: #938f99;
+    --gray_500_02: #a1a1a1;
+    --gray_500_16: #ada7a716;
+    --gray_500_1e: #ada7a71e;
+    --gray_500_30: #ada7a730;
+    --gray_500_38: #ada7a738;
+    --gray_500_44: #92969844;
+    --gray_500_5b: #ada7a75b;
+    --gray_50_01: #f9f9f9;
+    --gray_50_02: #fffcfa;
+    --gray_50_03: #fff6f6;
+    --gray_50_04: #f9fbff;
+    --gray_50_05: #fafafa;
+    --gray_50_0f: #f9f9f90f;
+    --gray_50_26: #f9f9f926;
+    --gray_50_2d: #f9f9f92d;
+    --gray_50_4c: #f9f9f94c;
+    --gray_50_5e: #f9f9f95e;
+    --gray_50_91: #f9f9f991;
+    --gray_50_bc: #f8fcffbc;
+    --gray_600: #858585;
+    --gray_600_01: #727272;
+    --gray_600_02: #767676;
+    --gray_600_03: #6f7880;
+    --gray_600_04: #737373;
+    --gray_600_05: #7e7e7e;
+    --gray_600_06: #6e7073;
+    --gray_600_07: #757575;
+    --gray_600_1e: #7676801e;
+    --gray_600_26: #6f717426;
+    --gray_600_30: #6f788030;
+    --gray_600_8c: #8080808c;
+    --gray_700: #666666;
+    --gray_800: #3d3c42;
+    --gray_800_01: #3c3c43;
+    --gray_800_28: #49454f28;
+    --gray_800_99: #3c3c4399;
+    --gray_900: #1e1e1e;
+    --gray_900_01: #1d1b20;
+    --gray_900_02: #172227;
+    --gray_900_9e: #1e1e1e9e;
+    --gray_900_b7: #1b1f26b7;
+    --green_700: #149144;
+    --green_800: #376a3e;
+    --indigo_300: #6991bf;
+    --indigo_50: #e1e2ff;
+    --indigo_50_7f: #e1ecf87f;
+    --indigo_600_a3: #356d9aa3;
+    --indigo_a100: #a5a6f6;
+    --indigo_a100_01: #7f8bfe;
+    --iris_100: #5d5fef;
+    --iris_80: #7879f1;
+    --keatext_purple: #7a5cfa;
+    --lime_900: #795a0c;
+    --lime_900_01: #b07200;
+    --lime_900_02: #864300;
+    --orange_100: #f2ddb8;
+    --pink_500: #e42c64;
+    --purple_100_9b: #dcc3d79b;
+    --red_100_f7: #ead7caf7;
+    --red_a700: #fb0c10;
+    --red_a700_01: #df0303;
+    --red_a700_02: #df0404;
+    --system_materials_sm_l_thick: #fafafaed;
+    --teal_50: #dfebf3;
+    --teal_500: #00b086;
+    --teal_700: #008667;
+    --teal_a700_60: #15c09860;
+    --w_background: #ffffff;
+    --white_a700: #fcfcff;
+    --white_a700_01: #fdfdff;
+    --white_a700_dd: #ffffffdd;
+
+    /*------Shadow variables------*/
+    --shadow-xs: 0 4px 4px 0 #0000003f;
+    --shadow-sm: 0 10px 60px 0 #e1ecf87f;
+    --shadow-md: 0 4px 4px 0 #0000002c;
+    --shadow-lg: 0 4px 38px 0 #0000003f;
+    --shadow-bs: inset 0 4px 4px 0 #0000003f;
+    --shadow-bs1: inset 4px 4px 4px 0 #0000003f;
+
+    /*------Border radius variables------*/
+    --radius-xs: 4px;
+    --radius-sm: 6px;
+    --radius-md: 8px;
+    --radius-lg: 10px;
+    --radius-xl: 12px;
+    --radius-2xl: 14px;
+    --radius-3xl: 16px;
+    --radius-4xl: 20px;
+    --radius-5xl: 24px;
+    --radius-6xl: 26px;
+    --radius-7xl: 28px;
+    --radius-8xl: 30px;
+    --radius-9xl: 32px;
+    --radius-10xl: 34px;
+    --radius-11xl: 38px;
+    --radius-12xl: 44px;
+    --radius-13xl: 50px;
+    --radius-14xl: 52px;
+
+    /*------Spacing variables------*/
+    --space-xs: 2px;
+    --space-sm: 4px;
+    --space-md: 6px;
+    --space-lg: 8px;
+    --space-xl: 10px;
+    --space-2xl: 12px;
+    --space-3xl: 14px;
+    --space-4xl: 16px;
+    --space-5xl: 18px;
+    --space-6xl: 20px;
+    --space-7xl: 22px;
+    --space-8xl: 23px;
+    --space-9xl: 24px;
+    --space-10xl: 30px;
+    --space-11xl: 32px;
+    --space-12xl: 34px;
+    --space-13xl: 36px;
+    --space-14xl: 42px;
+    --space-15xl: 50px;
+  }
+  [type="text"],
+  input:where(:not([type])),
+  [type="email"],
+  [type="url"],
+  [type="password"],
+  [type="number"],
+  [type="date"],
+  [type="datetime-local"],
+  [type="month"],
+  [type="search"],
+  [type="tel"],
+  [type="time"],
+  [type="week"],
+  [multiple],
+  textarea,
+  select {
+    appearance: none;
+    background-color: transparent;
+    border-color: unset;
+    border-width: 0;
+    border-radius: unset;
+    padding: unset;
+    font-size: unset;
+    line-height: unset;
+  }
+
+  /* Override default focus colors for tailwindcss-forms https://github.com/tailwindlabs/tailwindcss-forms */
+  [type="text"]:focus,
+  [type="email"]:focus,
+  [type="url"]:focus,
+  [type="password"]:focus,
+  [type="number"]:focus,
+  [type="date"]:focus,
+  [type="search"]:focus,
+  [multiple]:focus,
+  textarea:focus,
+  select:focus {
+    --tw-ring-color: transparent;
+    border-color: transparent;
+  }
+  [type="radio"]:focus,
+  [type="checkbox"]:focus {
+    --tw-ring-color: transparent;
+  }
+}
+@layer components {
+  /*-------------------------------------
+  Container CSS
+--------------------------------------*/
+  .container-xs {
+    @apply w-full mx-auto max-w-[1004px];
+  }
+
+  .container-sm {
+    @apply w-full mx-auto max-w-[1380px];
+  }
+}
